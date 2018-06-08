@@ -1,0 +1,36 @@
+{
+	"Health": {
+			"type": "Integer",
+			"value": [ "10", "20" ]
+	},
+	"StartLocation": {
+		"type": "Vector",
+			"value": [ "1.1 2.2 3.3 4.4", "1.2 2.3 3.4 4.5" ]
+	},
+	"Power": {
+			"type": "Table",
+			"value": {
+							"Name": {
+								"type": "String",
+								"value": "Fireball"
+							},
+							"DPS": {
+								"type": "Integer",
+								"value": "10"
+							},
+							"PowerTable": {
+								"type": "Table",
+								"value": {
+									"PowerTableVal1": {
+										"type": "String",
+										"value": "val1"
+									},
+									"PowerTableVal2": {
+										"type": "Float",
+										"value": "1.234567890"
+									}
+								}
+							}
+			}
+	}
+}

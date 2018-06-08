@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="FactoryTestClass.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="SListTest.cpp" />
+    <ClCompile Include="VectorTest.cpp" />
+    <ClCompile Include="HashMapTest.cpp" />
+    <ClCompile Include="DatumTest.cpp" />
+    <ClCompile Include="ScopeTest.cpp" />
+    <ClCompile Include="AttributedTest.cpp" />
+    <ClCompile Include="JsonParseMasterTest.cpp" />
+    <ClCompile Include="FactoryTest.cpp" />
+    <ClCompile Include="WorldScopeEntityTest.cpp" />
+    <ClCompile Include="TableParseHelperTest.cpp" />
+    <ClCompile Include="ActionTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="JsonParseMasterTestJson.json" />
+  </ItemGroup>
+</Project>

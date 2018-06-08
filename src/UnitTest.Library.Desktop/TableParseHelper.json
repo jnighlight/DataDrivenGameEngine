@@ -1,0 +1,99 @@
+{
+	"WorldName": "World1",
+	"Sector1": {
+		"Entity1": {
+			"Type": "FooEntity",
+			"Actions": {
+				"Name": "DebugAction1",
+				"Type": "DebugAction",
+				"Message": "Test1"
+			},
+			"Data": {
+				"Health": {
+					"type": "Integer",
+					"value": [ "10", "20" ]
+				},
+				"StartLocation": {
+					"type": "Vector",
+					"value": [ "1.1 2.2 3.3 4.4", "1.2 2.3 3.4 4.5" ]
+				},
+				"Power": {
+					"type": "Table",
+					"value": {
+						"Name": {
+							"type": "String",
+							"value": "Fireball"
+						},
+						"DPS": {
+							"type": "Integer",
+							"value": "10"
+						},
+						"PowerTable": {
+							"type": "Table",
+							"value": {
+								"PowerTableVal1": {
+									"type": "String",
+									"value": "val1"
+								},
+								"PowerTableVal2": {
+									"type": "Float",
+									"value": "1.234567890"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"Sector2": {
+		"Entity2": {
+			"Type": "FooEntity",
+			"Actions": {
+				"Type": "ActionList",
+				"Name": "BaseList",
+				"a0": {
+					"Name": "Action1",
+					"Type": "DebugAction",
+					"Message": "InList"
+				},
+				"a2": {
+					"Name": "destroyAction",
+					"Type": "ActionDestroyAction",
+					"ActionName": "Action1"
+				},
+				"a3": {
+					"Name": "IfAction1",
+					"Type": "ActionListIf",
+					"Condition": "TestCond",
+					"Then": {
+						"Name": "Then",
+						"Type": "DebugAction",
+						"Message": "ThenMessage"
+					},
+					"Else": {
+						"Name": "Else",
+						"Type": "DebugAction",
+						"Message": "ElseMessage"
+					}
+				},
+				"a4": {
+					"Name": "createAction",
+					"Type": "ActionCreateAction",
+					"Prototype": "DebugAction",
+					"PrototypeName": "CreatedDebugAction"
+				}
+			},
+			"Data": {
+				"TestCond": {
+					"type": "Integer",
+					"value": 0
+				},
+				"StartLocation": {
+					"type": "Vector",
+					"value": [ "1.1 2.2 3.3 4.4", "1.2 2.3 3.4 4.5" ]
+				}
+			}
+		}
+	}
+} }
